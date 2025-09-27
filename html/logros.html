@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <title>Academia</title>
+
+</head>
+
+<body class="bg-gray-900 ">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-black/50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12 ">
+        <a href="tailwind.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Inicio</a>
+        <a href="profesores.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Profesores</a>
+        <a href="cursos.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Cursos</a>
+        <a href="logros.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Logros</a>
+        <a href="../htmlJS/html/inicio.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">JS</a>
+      </div>
+
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="tailwind.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Inicio</a>
+                  <a href="profesores.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Profesores</a>
+                  <a href="cursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Cursos</a>
+                  <a href="logros.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Logros</a>
+                  <a href="../htmlJS/html/inicio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">JS</a>
+
+                </div>
+
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <!-- Fin Header -->
+
+<section class="relative min-h-screen bg-[url('/img/pronabec.jpeg')] bg-cover bg-center bg-fixed">
+  <!-- Overlay oscuro con opacidad -->
+  <div class="absolute inset-0 bg-black/60 hover:bg-black/70 transition duration-500"></div>
+
+  <!-- Contenido encima -->
+  <div class="relative z-10 py-24 sm:py-32 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">Nuestros Logros</h2>
+      <p class="mt-2 text-lg text-gray-300">Un recorrido de esfuerzo, disciplina y excelencia académica.</p>
+    </div>
+
+    <div
+      class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+      <!-- Logro 1 -->
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2023-12-01" class="text-gray-400">Dic 2023</time>
+          <span
+            class="relative z-10 rounded-full bg-green-800/60 px-3 py-1.5 font-medium text-gray-300">Académico</span>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg font-semibold text-white group-hover:text-gray-300">
+            <span class="absolute inset-0"></span>
+            100% de ingresantes a universidades nacionales
+          </h3>
+          <p class="mt-5 text-sm text-gray-400">Todos nuestros estudiantes de la promoción 2023 lograron ingresar a
+            universidades de prestigio, reafirmando nuestro compromiso con la excelencia.</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="../img/Hilario.jpg"
+            alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm">
+            <p class="font-semibold text-white">Dirección Académica</p>
+            <p class="text-gray-400">Academia</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Logro 2 -->
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2024-07-15" class="text-gray-400">Jul 2024</time>
+          <span
+            class="relative z-10 rounded-full bg-blue-800/60 px-3 py-1.5 font-medium text-gray-300">Competencia</span>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg font-semibold text-white group-hover:text-gray-300">
+            <span class="absolute inset-0"></span>
+            Campeones en Olimpiada Nacional de Matemática
+          </h3>
+          <p class="mt-5 text-sm text-gray-400">Nuestros estudiantes obtuvieron el primer puesto a nivel regional,
+            destacando por su talento lógico y capacidad de resolución de problemas.</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="../img/Hilario.jpg"
+            alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm">
+            <p class="font-semibold text-white">Equipo de Matemática</p>
+            <p class="text-gray-400">Academia</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Logro 3 -->
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="flex items-center gap-x-4 text-xs">
+          <time datetime="2024-11-20" class="text-gray-400">Nov 2024</time>
+          <span
+            class="relative z-10 rounded-full bg-yellow-600/60 px-3 py-1.5 font-medium text-gray-300">Reconocimiento</span>
+        </div>
+        <div class="group relative grow">
+          <h3 class="mt-3 text-lg font-semibold text-white group-hover:text-gray-300">
+            <span class="absolute inset-0"></span>
+            Premio a la Innovación Educativa
+          </h3>
+          <p class="mt-5 text-sm text-gray-400">El Ministerio de Educación nos reconoció por implementar metodologías
+            activas y tecnologías digitales en nuestras aulas.</p>
+        </div>
+        <div class="relative mt-8 flex items-center gap-x-4 justify-self-end">
+          <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&w=256&q=80>"
+            alt="" class="size-10 rounded-full bg-gray-800" />
+          <div class="text-sm">
+            <p class="font-semibold text-white">Ministerio de Educación</p>
+            <p class="text-gray-400">Reconocimiento oficial</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+  <!-- Fin Contenido principal -->
+
+</body>
+</html>

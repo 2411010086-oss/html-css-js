@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <title>Academia Horizonte</title>
+</head>
+
+<body class="bg-gray-900">
+
+  <!-- Header -->
+
+  <header class="fixed inset-x-0 top-0 z-50 bg-black/50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12 ">
+        <a href="tailwind.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Inicio</a>
+        <a href="profesores.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Profesores</a>
+        <a href="cursos.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Cursos</a>
+        <a href="logros.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Logros</a>
+        <a href="../htmlJS/html/inicio.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">JS</a>
+      </div>
+
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="tailwind.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Inicio</a>
+                  <a href="profesores.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Profesores</a>
+                  <a href="cursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Cursos</a>
+                  <a href="logros.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Logros</a>
+                  <a href="../htmlJS/html/inicio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">JS</a>
+
+                </div>
+
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <!-- Imagen de fondo -->
+
+  <section class="relative min-h-screen bg-[url('/img/pronabec.jpeg')] bg-cover bg-center bg-fixed">
+    <div class="absolute inset-0 bg-black/60 hover:bg-black/70 transition duration-500"></div>
+
+    <!-- Contenido principal -->
+    <div class="relative z-10 py-24 sm:py-32 max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Academia Horizonte</h2>
+        <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+          Somos una institución educativa comprometida con la excelencia académica y la formación integral de nuestros estudiantes.  
+          Brindamos cursos de alto nivel que preparan a nuestros alumnos para un futuro universitario y profesional exitoso.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#">Cursos destacados <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">Programa de becas <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">Nuestros valores <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">Conoce a los docentes <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <!-- Estadísticas -->
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Años de experiencia</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">25+</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Estudiantes egresados</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">4,800+</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Cursos ofrecidos</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">18</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Alumnos con beca</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">65%</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección cursos destacados -->
+  <section class="bg-gray-900 py-20 px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-4xl font-bold text-white text-center mb-12">Cursos más solicitados</h3>
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 text-gray-300">
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Matemáticas Avanzadas</h4>
+          <p class="mt-3">Preparación intensiva para exámenes de admisión universitarios con enfoque en álgebra, cálculo y geometría.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Comunicación Integral</h4>
+          <p class="mt-3">Fortalece tus habilidades de redacción, comprensión lectora y expresión oral.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Ciencias Naturales</h4>
+          <p class="mt-3">Clases dinámicas de biología, química y física aplicadas con laboratorios virtuales.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Inglés Académico</h4>
+          <p class="mt-3">Cursos de inglés orientados a mejorar competencias en TOEFL, IELTS y Cambridge.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Historia y Sociedad</h4>
+          <p class="mt-3">Aprende historia del Perú y el mundo con un enfoque crítico y reflexivo.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white">Programación Básica</h4>
+          <p class="mt-3">Introducción al mundo del software con Python y desarrollo web inicial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

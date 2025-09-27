@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <title>Academia</title>
+</head>
+
+<body class="bg-gray-900">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-black/50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12 ">
+        <a href="tailwind.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Inicio</a>
+        <a href="profesores.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Profesores</a>
+        <a href="cursos.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Cursos</a>
+        <a href="logros.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">Logros</a>
+        <a href="../htmlJS/html/inicio.html" class="text-sm/50 font-semibold text-white transition duration-300 hover:text-gray-300 ">JS</a>
+      </div>
+
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="../img/logoColegio.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="tailwind.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Inicio</a>
+                  <a href="profesores.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Profesores</a>
+                  <a href="cursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Cursos</a>
+                  <a href="logros.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">Logros</a>
+                  <a href="../htmlJS/html/inicio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 text-white transition duration-300 hover:text-gray-300">JS</a>
+
+                </div>
+
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+  <!-- Fin Header -->
+
+<!-- CÓDIGO PARA IMAGEN DE FONDO-->
+
+  <section class="relative min-h-screen bg-[url('/img/pronabec.jpeg')] bg-cover bg-center bg-fixed">
+  <!-- Overlay oscuro con opacidad -->
+    <div class="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition duration-500"></div>
+
+
+
+    <!-- Contenido encima -->
+    <div class="relative z-10 py-24 sm:py-32 max-w-7xl mx-auto px-6 lg:px-8">
+
+  <!-- FINAL CÓDIGO PARA IMAGEN DE FONDO -->    
+
+  <!-- Contenido principal -->
+
+  <ul role="list" class="divide-y divide-white/5">
+
+    
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Leslie Chambergo</p>
+        <p class="mt-1 truncate text-xs text-gray-400">2411010086@undc.edu.pe</p>
+      </div>
+    </div>
+
+    <!-- siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesora de Ingles </p>
+    </div>
+  </li>
+
+
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Leslie Alexander</p>
+        <p class="mt-1 truncate text-xs text-gray-400">leslie.alexander@example.com</p>
+      </div>
+    </div>
+
+    <!-- ✅ siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesora de Historia</p>
+    </div>
+  </li>
+
+
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="../img/Hilario.jpg" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Hilario Chambergo</p>
+        <p class="mt-1 truncate text-xs text-gray-400">2411010086@undc.edu.pe</p>
+      </div>
+    </div>
+
+    <!-- ✅ siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesor de Aritmetica</p>
+    </div>
+  </li>
+
+
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="../img/Hilario.jpg" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Hilario Chambergo</p>
+        <p class="mt-1 truncate text-xs text-gray-400">2411010086@undc.edu.pe</p>
+      </div>
+    </div>
+
+    <!-- ✅ siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesor de Geometria</p>
+    </div>
+  </li>
+
+
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="../img/Hilario.jpg" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Hilario Chambergo</p>
+        <p class="mt-1 truncate text-xs text-gray-400">2411010086@undc.edu.pe</p>
+      </div>
+    </div>
+
+    <!-- ✅ siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesor de Algebra</p>
+    </div>
+  </li>
+
+
+  <li class="flex flex-col sm:flex-row sm:justify-between gap-x-6 py-5">
+    <div class="flex min-w-0 gap-x-4">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
+           alt="" 
+           class="size-12 flex-none rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+      <div class="min-w-0 flex-auto">
+        <p class="text-sm font-semibold text-white">Leslie Alexander</p>
+        <p class="mt-1 truncate text-xs text-gray-400">leslie.alexander@example.com</p>
+      </div>
+    </div>
+
+    <!-- ✅ siempre visible, pero abajo en móviles -->
+    <div class="mt-4 sm:mt-0 flex flex-col items-start sm:items-end">
+      <p class="text-sm text-white">Profesora de comunicación</p>
+    </div>
+  </li>
+
+  
+</ul>
+
+  </div>
+</section>
+
+
+
+<!-- Fin Contenido principal -->
+
+</body>
+</html>
+
+
